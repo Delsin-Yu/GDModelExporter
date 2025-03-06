@@ -1,10 +1,12 @@
 # GDModelExporter
 
-The `GDModelExport` project utilize the power of Source Generator to dynamically generates `GodotSharp` compatible property bindings (`_GetPropertyList`, `_Get`, and `_Set`) implementation, which partially enables simplex use of custom data models.
+The `GDModelExporter` project utilizes the power of Source Generator to dynamically generate `GodotSharp` compatible property bindings (`_GetPropertyList`, `_Get`, and `_Set`) implementation, which partially enables the simple use of custom data models.
 
 ## Usage
 
-You may check the [example project](./GDModelExporter.Examples/) for a complete example of how to use the `GDModelExporter` project.
+You may check the [example project](./GDModelExporter.Examples/) for a complete example of using the `GDModelExporter` project.
+
+Godot 4.4 (.Net) is required.
 
 First, reference the `GDModelExporter` project in your Godot project.
 
@@ -95,7 +97,17 @@ public partial class TestExportNode : Node
 }
 ```
 
+||Output Preview||
+|-|-|-|
+| ![image](https://github.com/user-attachments/assets/355e2cca-3a07-4ed0-af1a-c16e5a2499e3) | ![image](https://github.com/user-attachments/assets/80bc9d9c-73f6-414f-abfe-b863b8fb8350) | ![image](https://github.com/user-attachments/assets/d61f8793-6ea2-4459-98b3-dd88e88ea024) |
+
+You may add the `ExportConfigAttribute` to the object's constructor parameters to further configure the export behavior (similar to the parameters provided by the original `ExportAttribute`).
+
+## Supported Types
+
+All types supported by the `ExportAttribute` should be supported; nested C# types are not.
+
 ## Limitations
 
-As C# is a compiled language, you ***MUST*** build the project before you entering any scene with node that uses the `GDModelExporter` generated code, otherwise the data will loss at the time you save that scene.
-The `GDModelExporter` is not a full replacement for the `Export` attribute, it only provides a way to bind data models to Godot nodes. You are still recomeneded to use the `Export` attribute for simple properties.
+As C# is a compiled language, you ***MUST*** build the project before entering any scene with a node that uses the `GDModelExporter` generated code; otherwise, the data will be lost when you save that scene.  
+The `GDModelExporter` is not a full replacement for the `Export` attribute; it only provides a way to export data models to the GodotEditor inspector. However, it is still recommended that you use the `Export` attribute for simple properties.
