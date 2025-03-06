@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://djfxbrh20yuga"]
+
+[ext_resource type="Script" uid="uid://byrynt56wfjyl" path="res://TestExportNode.cs" id="1_ig7tw"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_ig7tw")
+FloatValue = null
+Vector2Value = null
+Transform2DValue = null
+ProjectionValue = null
+ColorValue = null
+PackedByteArray = null
+PackedInt64Array = null
+PackedVector3Array = null
+Enum = null
+FlagsEnum = null
+UnpackedVector2IArray = null
+UnpackedResourcesArray = null
+Dictionary = null

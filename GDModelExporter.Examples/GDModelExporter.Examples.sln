@@ -1,0 +1,27 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDModelExporter.Examples", "GDModelExporter.Examples.csproj", "{4BD0C838-84EB-48B9-B681-931F09CB4AD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDModelExporter", "..\GDModelExporter\GDModelExporter.csproj", "{F6EFA2A3-6724-424E-8CB2-FA1308A24EFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BD0C838-84EB-48B9-B681-931F09CB4AD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BD0C838-84EB-48B9-B681-931F09CB4AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BD0C838-84EB-48B9-B681-931F09CB4AD4}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{4BD0C838-84EB-48B9-B681-931F09CB4AD4}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{4BD0C838-84EB-48B9-B681-931F09CB4AD4}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{4BD0C838-84EB-48B9-B681-931F09CB4AD4}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+		{F6EFA2A3-6724-424E-8CB2-FA1308A24EFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6EFA2A3-6724-424E-8CB2-FA1308A24EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6EFA2A3-6724-424E-8CB2-FA1308A24EFE}.ExportDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6EFA2A3-6724-424E-8CB2-FA1308A24EFE}.ExportDebug|Any CPU.Build.0 = Debug|Any CPU
+		{F6EFA2A3-6724-424E-8CB2-FA1308A24EFE}.ExportRelease|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6EFA2A3-6724-424E-8CB2-FA1308A24EFE}.ExportRelease|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal
